@@ -1,1 +1,1 @@
-0export default () => "Post";
+export default () => "Post";

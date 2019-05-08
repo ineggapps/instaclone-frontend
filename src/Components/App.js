@@ -38,10 +38,10 @@ export default () => {
             <Wrapper>
               <Routes isLoggedIn={isLoggedIn} />
               <Footer />
-              <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
             </Wrapper>
           </>
         </Router>
+        <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
       </>
     </ThemeProvider>
   );
