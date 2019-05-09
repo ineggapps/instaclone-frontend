@@ -43,4 +43,5 @@ export default ({ loading, data }) => {
       </>
     );
   }
+  return null;
 };

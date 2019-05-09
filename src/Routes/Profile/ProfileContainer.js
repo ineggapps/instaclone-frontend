@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import ProfilePresenter from "./ProfilePresenter";
 
 const GET_USER = gql`
-  query eeUser($username: String!) {
+  query seeUser($username: String!) {
     seeUser(username: $username) {
       avatar
       username
