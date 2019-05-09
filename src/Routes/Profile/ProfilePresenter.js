@@ -21,6 +21,7 @@ export default ({ loading, data }) => {
   } else if (!loading && data && data.seeUser) {
     const {
       seeUser: {
+        id,
         avatar,
         username,
         fullName,
