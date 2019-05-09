@@ -11,11 +11,12 @@ export const resolvers = {
           isLoggedIn: true
         }
       });
+      window.location = "/feed/";
       return null;
     },
     logUserOut: (_, __, { cache }) => {
       localStorage.removeItem("token");
-      window.location.reload();
+      window.location = "/";
       return null;
     }
   }

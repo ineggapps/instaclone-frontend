@@ -1,5 +1,5 @@
 import { useQuery } from "react-apollo-hooks";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import React from "react";
 import { gql } from "apollo-boost";
@@ -47,9 +47,9 @@ export default () => {
   const { data, loading } = useQuery(FEED_QUERY);
   return (
     <Wrapper>
-      {/* <Helmet>
+      <Helmet>
         <title>Feed | Instaclone</title>
-      </Helmet> */}
+      </Helmet>
       {loading && <Loader />}
       {!loading &&
         data &&
